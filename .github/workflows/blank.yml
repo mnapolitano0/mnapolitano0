@@ -1,0 +1,33 @@
+name: Upload SVGs to main
+on:
+  schedule:
+    - cron: '*/10 * * * *'  # Executa a cada 10 minutos
+  push:
+    branches:
+      - output
+jobs:
+  upload-svg-dark:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Copy SVG file
+      run: cp github-contribution-grid-snake-dark.svg $GITHUB_WORKSPACE
+    - name: Enviar SVG-Dark para branch main
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
+
+  upload-svg:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Copy SVG file
+      run: cp github-contribution-grid-snake.svg $GITHUB_WORKSPACE
+    - name: Enviar SVG para branch main
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
