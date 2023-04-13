@@ -3,6 +3,9 @@ name: Snake
 on:
   schedule:
     - cron: "0 */1 * * *" 
+    
+permissions:
+contents: write
 
   workflow_dispatch:
   
@@ -10,14 +13,17 @@ on:
     branches:
     - master
 
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     
     steps:
+    
 
       - name: generate github-contribution-grid-snake.svg
+      
         uses: Platane/snk/svg-only@v2
         with:
           github_user_name: mnapolitano0
