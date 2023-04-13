@@ -3,6 +3,8 @@ name: Upload SVGs to main
 on:
   schedule:
     - cron: '*/1 * * * *'  # Executa a cada 10 minutos
+    
+  workflow_dispatch:
   push:
     branches:
       - output
