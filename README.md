@@ -1,10 +1,10 @@
-## ?? Redes Sociais
+## Redes Sociais
 
 <div>
-  <img alt="discord" src="./icons/.svg" />
-  <img alt="php" src="./icons/php-original.svg" />
-  <img alt="css" src="./icons/css3-original.svg" />
-  <img alt="wp" src="./icons/wordpress-original.svg" />
+  <img alt="discord" src="./icons/.svg" width="40" height="40" />
+  <img alt="php" src="./icons/php-original.svg" width="40" height="40" />
+  <img alt="css" src="./icons/css3-original.svg" width="40" height="40" />
+  <img alt="wp" src="./icons/wordpress-original.svg" width="40" height="40" />
 </div>
 
 #
