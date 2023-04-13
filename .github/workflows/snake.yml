@@ -4,8 +4,6 @@ on:
   schedule:
     - cron: "0 */1 * * *" 
     
-permissions:
-contents: write
 
   workflow_dispatch:
   
@@ -13,6 +11,8 @@ contents: write
     branches:
     - master
 
+permissions:
+  contents: write
 
 jobs:
   generate:
