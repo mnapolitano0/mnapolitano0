@@ -1,4 +1,4 @@
-name: Bylickilabs Generate Snake
+name: Snake
  
 on:
   schedule:
