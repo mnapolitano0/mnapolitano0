@@ -1,7 +1,8 @@
 name: Upload SVGs to main
+
 on:
   schedule:
-    - cron: '*/10 * * * *'  # Executa a cada 10 minutos
+    - cron: '*/1 * * * *'  # Executa a cada 10 minutos
   push:
     branches:
       - output
