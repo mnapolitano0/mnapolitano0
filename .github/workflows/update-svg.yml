@@ -24,7 +24,12 @@ jobs:
           wget https://raw.githubusercontent.com/mnapolitano0/mnapolitano0/23e0dfe79e32e8b138b661d72741551c88478840/github-contribution-grid-snake.svg
           git config user.name "mnapolitano0"
           git config user.email "matheus.napolitano@mnsystems.com.br"
+
+          git rm *.svg
+          git commit -m "Removendo as imagens - SVGS"
+          git push
+          
           git add *.svg
-          git commit -m "Update nos SVGS"
+          git commit -m "Adicionando as imagens - SVGS"
           git push
         working-directory: ${{ github.workspace }}
