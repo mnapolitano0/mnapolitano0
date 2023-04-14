@@ -20,8 +20,8 @@ jobs:
 
       - name: Baixar foto
         run: |
-          curl -L -o github-contribution-grid-snake-dark.svg https://github.com/mnapolitano0/mnapolitano0/blob/output/github-contribution-grid-snake-dark.svg
-          curl -L -o github-contribution-grid-snake.svg https://github.com/mnapolitano0/mnapolitano0/blob/output/github-contribution-grid-snake.svg
+          wget https://github.com/mnapolitano0/mnapolitano0/blob/output/github-contribution-grid-snake-dark.svg
+          wget https://github.com/mnapolitano0/mnapolitano0/blob/output/github-contribution-grid-snake.svg
           git config user.name "mnapolitano0"
           git config user.email "matheus.napolitano@mnsystems.com.br"
           git add *.svg
