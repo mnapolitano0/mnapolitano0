@@ -25,10 +25,6 @@ jobs:
           git config user.name "mnapolitano0"
           git config user.email "matheus.napolitano@mnsystems.com.br"
 
-          git rm *.svg
-          git commit -m "Removendo as imagens - SVGS"
-          git push
-          
           git add *.svg
           git commit -m "Adicionando as imagens - SVGS"
           git push
