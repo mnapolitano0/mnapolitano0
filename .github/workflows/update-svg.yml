@@ -23,7 +23,7 @@ jobs:
           git config user.name "mnapolitano0"
           git config user.email "matheus.napolitano@mnsystems.com.br"
 
-          git rm '*.svg'
+          git rm 'github-contribution-grid-snake*.svg'
           git commit -m "Removendo as imagens - SVGS"
           git push
         working-directory: ${{ github.workspace }}
