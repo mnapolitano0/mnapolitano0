@@ -10,6 +10,8 @@
 <div>
   <img alt="php" src="./icons/php-original.svg" width="60" height="60" />
   <img alt="css" src="./icons/css3-original.svg" width="60" height="60" />
+  <img alt="css" src="./icons/html5.svg" width="60" height="60" />
+  <img alt="css" src="./icons/javascript-original.svg" width="60" height="60" />
   <img alt="wp" src="./icons/wordpress-original.svg" width="60" height="60" />
 </div>
 
