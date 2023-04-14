@@ -1,1 +1,26 @@
+name: Baixar foto a cada 10 minutos
 
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+    
+  workflow_dispatch:
+
+jobs:
+  baixar-foto:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v2
+
+      - name: Baixar foto
+        run: |
+          curl -L -o github-contribution-grid-snake-dark.svg https://github.com/mnapolitano0/mnapolitano0/blob/output/github-contribution-grid-snake-dark.svg
+          curl -L -o github-contribution-grid-snake.svg https://github.com/mnapolitano0/mnapolitano0/blob/output/github-contribution-grid-snake.svg
+          git config user.name "mnapolitano0"
+          git config user.email "matheus.napolitano@mnsystems.com.br"
+          git add *.svg
+          git commit -m "Update nos SVGS"
+          git push
+        working-directory: ${{ github.workspace }}
